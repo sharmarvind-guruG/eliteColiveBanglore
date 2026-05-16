@@ -1,7 +1,7 @@
 const siteConfig = {
   whatsappNumber: "919980344197",
   whatsappMessage:
-    "Hi, I am interested in Elite Colive Bangalore. Please share current availability and rent details.",
+    "Hi, I am interested in Elite Legacy Colive Bangalore. Please share current availability and rent details.",
 };
 
 const selectors = {
@@ -86,7 +86,7 @@ function initGallery() {
     if (!fullImage || !image) return;
 
     lightboxImage.setAttribute("src", fullImage);
-    lightboxImage.setAttribute("alt", image.getAttribute("alt") || "Elite Colive gallery image");
+    lightboxImage.setAttribute("alt", image.getAttribute("alt") || "Elite Legacy Colive gallery image");
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     closeButton.focus();
