@@ -1,5 +1,5 @@
 const siteConfig = {
-  whatsappNumber: "919999999999",
+  whatsappNumber: "919980344197",
   whatsappMessage:
     "Hi, I am interested in Elite Colive Bangalore. Please share current availability and rent details.",
 };
