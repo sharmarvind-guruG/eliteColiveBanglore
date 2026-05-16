@@ -1,0 +1,166 @@
+@media (max-width: 1040px) {
+  .header-inner,
+  .header-v2-inner {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: block;
+    order: 3;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .header-top {
+    display: none;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-md);
+    border-bottom: 1px solid var(--color-line);
+    background: var(--color-surface);
+  }
+
+  .header-v2 .site-nav {
+    top: 84px;
+  }
+
+  .nav-v2 {
+    border-radius: 0;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: var(--space-md);
+    border-radius: var(--radius-sm);
+  }
+
+  .mobile-nav-cta {
+    display: block;
+    color: #fff !important;
+    background: var(--color-primary);
+    text-align: center;
+  }
+
+  .hero-grid,
+  .location-grid,
+  .why-grid,
+  .faq-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .highlight-grid,
+  .amenity-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .room-grid,
+  .testimonial-grid,
+  .audience-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --space-3xl: 3.25rem;
+    --space-2xl: 2rem;
+  }
+
+  .container {
+    width: min(100% - 24px, var(--container));
+  }
+
+  h1 {
+    max-width: 12ch;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .section-heading-split,
+  .cta-panel,
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-grid {
+    gap: var(--space-xl);
+  }
+
+  .hero-media,
+  .hero-media img {
+    min-height: 420px;
+  }
+
+  .hero-stats,
+  .highlight-grid,
+  .room-grid,
+  .amenity-grid,
+  .testimonial-grid,
+  .audience-grid,
+  .gallery-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-badge {
+    left: var(--space-md);
+    right: var(--space-md);
+    bottom: var(--space-md);
+    max-width: none;
+  }
+
+  .map-panel iframe {
+    height: 330px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .brand-place {
+    font-size: 0.74rem;
+  }
+
+  h1 {
+    font-size: 2.55rem;
+  }
+
+  .hero-media,
+  .hero-media img {
+    min-height: 360px;
+  }
+}
